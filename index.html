@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abroad Education</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <style>
+      body{margin-top:20px;}
+
+      .align-center {
+          text-align: center;
+      }
+      .hash-list {
+          display: block;
+          padding: 0;
+          margin: 0 auto;
+      }
+
+      @media (min-width: 768px){
+          .hash-list.cols-3 > li:nth-last-child(-n+3) {
+              border-bottom: none;
+          }
+      }
+      @media (min-width: 768px){
+          .hash-list.cols-3 > li {
+              width: 33.3333%;
+          }
+      }
+      .hash-list > li {
+          display: block;
+          float: left;
+          border-right: 1px solid rgba(0, 0, 0, 0.2);
+          border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      }
+      .pad-30, .pad-30-all > * {
+          padding: 30px;
+      }
+      img {
+          border: 0;
+      }
+      .mgb-20, .mgb-20-all > * {
+          margin-bottom: 20px;
+      }
+      .wpx-100, .wpx-100-after:after {
+          width: 100px;
+      }
+      .img-round, .img-rel-round {
+          border-radius: 50%;
+      }
+      .padb-30, .padb-30-all > * {
+          padding-bottom: 30px;
+      }
+
+      .mgb-40, .mgb-40-all > * {
+          margin-bottom: 40px;
+      }
+      .align-center {
+          text-align: center;
+      }
+      [class*="line-b"] {
+          position: relative;
+          padding-bottom: 20px;
+          border-color: #E6AF2A;
+      }
+      .fg-text-d, .fg-hov-text-d:hover, .fg-active-text-d.active {
+          color: #222;
+      }
+      .font-cond-b {
+          font-weight: 700 !important;
+      }
+      
+      body{
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .carousel-item {
+        height: 50vh; /* 85% of the viewport height */
+        min-height: 500px; /* Set a minimum height for smaller screens */
+      }
+      .container-marketing{
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+      }  
+      .slide-image{
+        min-height: 100%;
+        max-width: 100%;
+        display: block;
+        object-fit: cover;
+        filter: brightness(40%);
+
+      }
+      .block-image{
+        max-height: 400px;
+        max-width: 400px;
+        border-radius: 10%;
+        filter: brightness(90%);
+      }
+      @media(max-width:1000px){
+        .block-image{
+          max-height: 300px;
+          max-width: 300px;
+          
+        }
+        .col-md-5{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+        }
+      }
+      .institution-lists {
+          display: flex; /* Enables flexbox layout */
+          justify-content: space-between; /* Distributes space between items */
+      }
+
+      .list-container {
+          flex: 1; /* Allows both lists to take up equal space */
+          margin: 0 10px; /* Adds margin between the lists */
+      }
+      @media (max-width: 600px) {
+          .institution-lists {
+              flex-direction: column; /* Stacks lists vertically on small screens */
+          }
+
+          .list-container {
+              margin: 10px 0; /* Adds margin above and below each list */
+          }
+      }
+      #contact .card:hover i,#contact .card:hover h4{
+        color: #87d37c;
+      }
+      .gradient-background{
+        background: linear-gradient(300deg, #00aeff, #082e96, #72e5ef);
+        background-size: 180% 180%;
+        animation: gradient-animation 18s ease infinite;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+      </symbol>
+    </svg>
+
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (dark)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="dark" aria-pressed="true">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    
+    <header data-bs-theme="dark">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                  <img style="border-radius: 50px;" src="./assets/WhatsApp Image 2024-10-18 at 13.04.32.jpeg" height="30" alt="">
+                  Abroad Education
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#footer">Contact us</a> <!-- Added href to point to the footer -->
+                      </li>
+                  </ul>
+                  <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+              </div>
+          </div>
+      </nav>
+  </header>
+
+  <main>
+
+  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <img class="slide-image" src="./assets/wallpaperflare.com_wallpaper.jpg" alt="">
+        <div class="container">
+          <div class="carousel-caption text-start pb-5">
+            <h1>Worldwide Student Assistance.</h1>
+            <p class="opacity-75">We welcome students from every corner of the globe. No matter where you're studying or what challenges you're facing with your assignments, our team is here to assist. Reach out to us from anywhere, at any time!</p>
+    
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="slide-image" src="./assets/wallpaperflare.com_wallpaper (1).jpg" alt="">
+        <div class="container">
+          <div class="carousel-caption pb-5">
+            <h1>Trusted by Australian Students.</h1>
+            <p>We’ve helped many Australian students succeed with their assignments. Our support aligns with the academic standards in Australia, ensuring quality work that meets your needs.</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item active">
+        <img class="slide-image" src="./assets/wallpaperflare.com_wallpaper (3).jpg" alt="">
+        <div class="container">
+          <div class="carousel-caption text-end pb-5">
+            <h1>Trusted by Canadian Scholars.</h1>
+            <p>We've assisted numerous Canadian students with their assignments, providing tailored support that meets Canadian academic standards. Trust us to help you achieve success too!</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing pt-5">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-4">
+          <img style="border-radius: 100px;" src="./assets/WhatsApp Image 2024-10-18 at 13.04.32.jpeg" height="150px" alt="Abroad Education logo">
+          <h2 class="fw-normal">About us</h2>
+          <p>Since 2020, we’ve been dedicated to helping students with their assignments across the globe. With over 2,000 students supported, including more than 1,000 from Australia alone, our reach continues to grow. Currently, over 500 students rely on us daily for academic assistance, and we take pride in delivering service that leaves every student satisfied.</p>
+          <p><a class="btn btn-secondary" href="#">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img style="border-radius: 100px;" src="./assets/gettyimages-612854434-612x612.jpg" height="150px" width="150px" alt="Abroad Education logo">        
+          <h2 class="fw-normal">Our Team</h2>
+          <p>Our dedicated team is composed of experienced professionals who are passionate about education. Each member brings unique expertise and a commitment to helping students succeed. We understand the challenges you face and work tirelessly to provide tailored assistance that meets your academic needs. Together, we strive to create a supportive environment.</p>
+          <p><a class="btn btn-secondary" href="#">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img style="border-radius: 100px;" src="./assets/gettyimages-1358638997-612x612.jpg" height="150px" width="150px" alt="Abroad Education logo"> 
+          <h2 class="fw-normal">Our Goal</h2>
+          <p>Our goal is to empower students worldwide by providing exceptional support for their academic challenges. We aim to foster a learning environment that promotes understanding and success, ensuring that every student feels confident and capable in their studies. Through our dedicated assistance, we aspire to make a positive impact on students' academic journeys.</p>
+          <p><a class="btn btn-secondary" href="#">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+  
+      <!-- START THE FEATURETTES -->
+  
+      <hr class="featurette-divider">
+  
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Institutions. <span class="text-body-secondary">we have helped students from.</span></h2>
+          <p>We take pride in supporting students from various prestigious institutions across Australia and Canada. Our commitment to academic excellence has enabled us to assist students from the following universities:</p>
+          <div class="institution-lists">
+            <div class="list-container">
+                <h3>Australia</h3>
+                <ul>
+                    <li>University of Sydney</li>
+                    <li>University of Melbourne</li>
+                    <li>Australian National University (ANU)</li>
+                    <li>University of Queensland</li>
+                    <li>University of New South Wales (UNSW)</li>
+                    <li>Monash University</li>
+                    <li>RMIT University</li>
+                    <li>University of Adelaide</li>
+                    <li>Curtin University</li>
+                    <li>University of Technology Sydney (UTS)</li>
+                </ul>
+            </div>
+        
+            <div class="list-container">
+                <h3>Canada</h3>
+                <ul>
+                    <li>University of Toronto</li>
+                    <li>University of British Columbia (UBC)</li>
+                    <li>McGill University</li>
+                    <li>University of Alberta</li>
+                    <li>University of Waterloo</li>
+                    <li>University of Calgary</li>
+                    <li>Western University</li>
+                    <li>York University</li>
+                    <li>Simon Fraser University</li>
+                    <li>McMaster University</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-5 text-center">
+          <img class="block-image" src="./assets/wallpaperflare.com_wallpaper (5).jpg" alt="">        
+        </div>
+      </div>
+  
+      <hr class="featurette-divider">
+  
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">Courses. <span class="text-body-secondary">We've Helped Students With.</span></h2>
+          <p class="lead">We have assisted students in various courses across multiple disciplines. Below is a list of courses where our support has made a difference:</p>
+          <div class="institution-lists">
+            <div class="list-container">
+                <h3>Common Courses</h3>
+                <ul>
+                    <li>Business Management</li>
+                    <li>Computer Science</li>
+                    <li>Engineering</li>
+                    <li>Health Sciences</li>
+                    <li>Environmental Studies</li>
+                    <li>Construction Management</li>
+                    <li>Leadership Management</li>
+                    <li>Cookery</li>
+                    <li>Aoutomotive</li>
+                </ul>
+            </div>
+        
+            <div class="list-container">
+                <h3>Specialized Courses</h3>
+                <ul>
+                    <li>Data Science</li>
+                    <li>Cybersecurity</li>
+                    <li>Digital Marketing</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Web Development</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-5 order-md-1 text-center">
+          <img class="block-image" src="./assets/wallpaperflare-cropped.jpg" alt="">        
+        </div>
+      </div>
+  
+      <hr class="featurette-divider">
+  
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Countries. <span class="text-body-secondary">We have assisted students from.</span></h2>
+          <p class="lead">We are proud to have supported students from a diverse range of countries, including India, China, the United States, Brazil, the United Kingdom, Germany, France, South Africa, Japan, and Singapore. Our commitment to helping international students ensures that no matter where they come from, they can access the resources and guidance they need to succeed in their academic pursuits.</p>
+        </div>
+        <div class="col-md-5 text-center">
+          <img class="block-image" src="./assets/wallpaperflare-cropped (1).jpg" alt="">        
+        </div>
+      </div>
+  
+      <hr class="featurette-divider">
+      
+  
+      <!-- /END THE FEATURETTES -->
+       
+  
+    </div>
+    <div class="container">
+      <div class="mgb-40 padb-30 auto-invert line-b-4 align-center">
+        <h4 class="font-cond-l fg-accent lts-md mgb-10" contenteditable="false">For more satisfaction</h4>
+        <h1 class="font-cond-b fg-text-d lts-md fs-300 fs-300-xs no-mg" contenteditable="false">Read Customer Reviews</h1>
+        <div>
+          <ul class="hash-list cols-3 cols-1-xs pad-30-all align-center text-sm">
+            <li>
+              <img style="border-radius: 100px;" src="./assets/IMG_20241019_142614.jpg" height="150px" width="150px" alt="client photo"> 
+              <p class="fs-110 font-cond-l" contenteditable="false">"The support I received has been amazing! They understood the specific requirements of my assignments and delivered exactly what I needed. Highly recommend their services!"</p>
+              <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Ujjwal Raj Tiwari</h5>
+              <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">Engineering Student - Australia</small>
+            </li>
+      
+            <li>
+              <img style="border-radius: 100px;" src="./assets/IMG_20241019_142554.jpg" height="150px" width="150px" alt="client photo"> 
+              <p class="fs-110 font-cond-l" contenteditable="false">"I’ve been using their services for a while now, and I’m always impressed with the quality and timeliness. They have been a great help in my studies!"</p>
+              <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Zhang Lian</h5>
+              <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">MBA Student - Australia</small>
+            </li>
+      
+            <li>
+              <img style="border-radius: 100px;" src="./assets/IMG_20241019_142541.jpg" height="150px" width="150px" alt="client photo"> 
+              <p class="fs-110 font-cond-l" contenteditable="false">"I can’t thank them enough for their help! Every time I reach out, I receive prompt assistance, and the quality of work is top-notch. A lifesaver for busy students!"</p>
+              <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Lakhjeet Singh</h5>
+              <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">IT Student - Canada</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- FOOTER -->
+    <footer id="footer" class="py-5"> <!-- Added id="footer" to enable scrolling to it -->
+      <div class="row col-12 px-5 pb-5 gradient-background">
+          <div class="col-12">
+              <h5 class="pt-5">Contact Us</h5>
+              <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                      <h5 class="nav-link p-0 text-body-secondary">
+                          <img src="./assets/whatsapp.svg" alt="" height="50px"> 90-450-75-113
+                      </h5>
+                  </li>
+                  <li class="nav-item mb-2">
+                      <h5 class="nav-link p-0 text-body-secondary">
+                          <img src="./assets/envelope-at-fill.svg" alt="" height="50px"> ae.assignments.help@gmial.com
+                      </h5>
+                  </li>
+                  <p>© 2024 Abroad Education</p>
+              </ul>
+          </div>
+      </div>
+    </footer>
+
+    
+  </main>
+  
+  <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Select the "Contact us" link
+        const contactLink = document.querySelector('.navbar-nav .nav-link[href="#footer"]'); // Select the link pointing to the footer
+
+        // Add a click event listener
+        contactLink.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default anchor behavior
+
+            // Scroll to the footer smoothly
+            const footer = document.querySelector('#footer'); // Select the footer element using the new ID
+            footer.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Smoothly scroll to the footer
+        });
+    });
+</script>
+  
+
+    
+
+</body>
+
+</html>
+
+<!--  -->
